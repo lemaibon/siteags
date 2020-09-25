@@ -21,7 +21,7 @@
         {{-- Logo --}}
         <div class="{{ $auth_type ?? 'login' }}-logo">
             <a href="{{ $dashboard_url }}">
-                <img src="{{ asset(config('adminlte.logo_img')) }}" height="50">
+                <div class="mx-auto"><img class="rounded-circle" src="{{ asset(config('adminlte.logo_img')) }}" height="150"></div>
                 {!! config('adminlte.logo', '<b>Admin</b>LTE') !!}
             </a>
         </div>
