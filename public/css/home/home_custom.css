@@ -1,0 +1,418 @@
+html {
+    scroll-behavior: smooth;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    height: 100%;
+}
+
+/* Move down content because we have a fixed navbar that is 3.5rem tall */
+body {
+    position: relative;
+    height: 100%;
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+.navbar-brand {
+    font-size: 1rem;
+}
+
+
+.service-logo {
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#aboutus {
+    margin-top: 0rem;
+    padding-top: 3rem;
+    padding-bottom: 10rem;
+}
+
+#service {
+    margin-top: 0rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+#project {
+    margin-top: 0rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#article {
+    margin-top: 0rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+#contactus {
+    margin-top: 0rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+#footer {
+    margin-top: 0rem;
+    padding-top: 0rem;
+}
+
+.carousel {
+    max-height: 552px;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 552px) {
+    .carousel {
+        /* Pushes out the margins on mobile devices so it lines up with the article body. */
+        margin-left: -20px !important;
+        margin-right: -20px !important;
+        width: inherit !important;
+    }
+}
+
+.carousel .carousel-control-prev,
+.carousel .carousel-control-next,
+.carousel .carousel-indicators {
+    visibility: hidden;
+}
+
+.carousel:hover .carousel-control-prev,
+.carousel:hover .carousel-control-next,
+.carousel:hover .carousel-indicators {
+    visibility: visible;
+    z-index: 15;
+}
+
+.carousel:after {
+    content: '\A';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+.carousel:hover:after {
+    opacity: 1;
+}
+
+.carousel-fade .carousel-item {
+    opacity: 0;
+    transition-duration: .6s;
+    transition-property: opacity;
+}
+
+.carousel-fade .carousel-item.active,
+.carousel-fade .carousel-item-next.carousel-item-left,
+.carousel-fade .carousel-item-prev.carousel-item-right {
+    opacity: 1;
+}
+
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-right {
+    opacity: 0;
+}
+
+.carousel-fade .carousel-item-next,
+.carousel-fade .carousel-item-prev,
+.carousel-fade .carousel-item.active,
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-prev {
+    transform: translateX(0);
+    transform: translate3d(0, 0, 0);
+}
+
+div.aboutDesc {
+    text-indent: 30px;
+}
+
+div.serviceDesc {
+    text-indent: 30px;
+}
+
+.imgArt {
+    height: 300px;
+}
+
+.bg-contact {
+    height: 100%;
+    background: linear-gradient(90deg, #bada55 43%, #f8fbee 43%);
+}
+
+.footer-color {
+    background-color: #333333;
+}
+
+.footerLink {
+    color: silver;
+}
+
+.footerHome {
+    color: silver;
+    font-size: 1.5rem;
+}
+
+.footerDetail {
+    color: #cccccc;
+    font-size: 0.75rem;
+}
+
+.footerIcon {
+    color: #cccccc;
+}
+
+.footerCopyright {
+    color: #333333;
+    font-size: 0.75rem;
+    background-color: #bada55;
+}
+
+.btn-read {
+    background-color: #bada55;
+    border-color: #333333;
+    color: #333333;
+}
+
+a.btn-read:hover {
+    background-color: #333333;
+    border-color: #bada55;
+    color: #bada55;
+}
+
+a.footerLink:hover {
+    color: #bada55;
+}
+
+a.footerHome:hover {
+    color: #bada55;
+}
+
+a.footerIcon:hover {
+    color: #bada55;
+}
+
+.jumbotron {
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("/img/home/bg1.jpeg");
+    background-size: cover;
+    background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    color: #fff;
+    height: calc(100vh);
+}
+
+.jumbotronText1 {
+    color: #bada55;
+    font-family: marcellus sc;
+    font-size: 28px;
+    text-shadow: 2px 2px #121508;
+}
+
+.jumbotronText2 {
+    color: silver;
+    font-family: tajawal;
+    font-size: 15px;
+}
+
+.jumbotronText3 {
+    color: silver;
+    font-family: salsa;
+    font-size: 18px;
+    text-shadow: 2px 1px #000;
+}
+
+.hrJumbotron {
+    background-color: silver;
+}
+
+.btnJumbotron {
+    background-color: #bada55;
+    border-color: #333333;
+    color: #333333;
+}
+
+.btnJumbotron:hover {
+    background-color: #333333;
+    border-color: #bada55;
+    color: #bada55;
+}
+
+.form-control:focus,
+.form-control:active {
+    border-color: #000;
+    outline: 0;
+    box-shadow: inset 0 0 0;
+}
+
+.navbar-brand {
+    color: #bada55 !important;
+}
+
+
+.aboutbgcolor,
+.projectbgcolor {
+    background-color: #f8fbee;
+}
+
+.styleheadingarticle1 {
+    font-size: 20px;
+    font-family: arial;
+}
+
+.styleheadingarticle2 {
+    font-size: 15px;
+    font-family: arial;
+}
+
+.infopanel {
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    margin-top: -120px;
+    background-color: white;
+    padding-bottom: 2rem;
+}
+
+.aboutnamapt {
+    font-size: 15px;
+}
+
+.imageinfopanel {
+    width: 50px;
+    height: 45px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
+.headinginfopanel {
+    font-size: 18px;
+    font-family: arial;
+    padding-top: 1rem;
+    text-shadow: 1px 1px #bada55;
+}
+
+.contentinfopanel {
+    font-size: 15px;
+    font-family: arial;
+}
+
+.textaboutfont {
+    font-size: 12px;
+    font-family: arial;
+}
+
+.card-body {
+    background-color: #f8fbee;
+}
+
+.carouselcontainer {
+    padding-left: 55px;
+}
+
+.card {
+    width: 100%;
+    height: auto;
+}
+
+@media (min-width: 992px) {
+    .jumbotronText1 {
+        color: #bada55;
+        font-family: marcellus sc;
+        font-size: 50px;
+        text-shadow: 2px 2px #121508;
+    }
+
+    .jumbotronText2 {
+        color: silver;
+        font-family: tajawal;
+        font-size: 25px;
+    }
+
+    .jumbotronText3 {
+        color: silver;
+        font-family: salsa;
+        font-size: 40px;
+        text-shadow: 5px 3px #000;
+    }
+
+    .nav-link:hover::after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid #bada55;
+        width: 50%;
+        margin: auto;
+    }
+
+    .styleheadingarticle1 {
+        font-size: 35px;
+        font-family: arial;
+    }
+
+    .styleheadingarticle2 {
+        font-size: 25px;
+        font-family: arial;
+    }
+
+    div.aboutDesc {
+        text-indent: 50px;
+    }
+
+    div.serviceDesc {
+        text-indent: 50px;
+    }
+
+    .aboutnamapt {
+        font-size: 20px;
+    }
+
+    .imageinfopanel {
+        width: 90px;
+        height: 85px;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+    }
+
+    .headinginfopanel {
+        font-size: 20px;
+        font-family: arial;
+        padding-top: 1rem;
+        text-shadow: 1px 1px #bada55;
+    }
+
+    .contentinfopanel {
+        font-size: 18px;
+        font-family: arial;
+    }
+
+    .textaboutfont {
+        font-size: 16px;
+        font-family: arial;
+    }
+}
