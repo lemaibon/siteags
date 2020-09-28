@@ -8,8 +8,7 @@
     <title>Artha Graha Samudera</title>
 
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
     <!-- font -->
     <link href="https://fonts.googleapis.com/css2?family=Salsa&display=swap" rel="stylesheet">
@@ -49,14 +48,6 @@
                 <li class="nav-item">
                     <a class="nav-link page-scroll" href="#article">Article</a>
                 </li>
-                <!-- <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle page-scroll" href="#article" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Article</a>
-            <div class="dropdown-menu" aria-labelledby="dropdown01">
-              <a class="dropdown-item" href="#">Our New Armada TB. Charly VII</a>
-              <a class="dropdown-item" href="#">Cara Menyewa Tongkang</a>
-              <a class="dropdown-item" href="#">Detail Tug Boat, Tongkang dan LCT</a>
-            </div>
-          </li> -->
                 <li class="nav-item">
                     <a class="nav-link page-scroll" href="#contactus">Contact Us</a>
                 </li>
@@ -71,10 +62,6 @@
                     </a>
                 </li>
             </ul>
-            <!--  <button class="searchIcon" onclick="myFunction()">V</button>
-        <form id="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-        </form> -->
         </div>
     </nav>
     <div class="search-form-wrapper">
@@ -126,26 +113,6 @@
                         perusahaan yang bernaung di bawah Artha Graha Samudera, yaitu PT. Artha Graha Samudera & PT.
                         Artha Graha Stuwarindo</p>
                 </div>
-                <!-- <div class="row justify-content-center pb-2 pt-3">
-        <div class="col-md-auto ml-5 mr-5">
-          <div class="icon-block">
-            <div class="text-center">
-              <div class="w-auto text-center aboutnamapt">
-                <a>PT. ARTHA GRAHA SAMUDERA</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-auto ml-5 mr-5">
-          <div class="icon-block">
-            <div class="text-center">
-              <div class="w-auto text-center aboutnamapt">
-                <a>PT. ARTHA GRAHA STUWARINDO</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
             </div>
         </div>
 
@@ -251,80 +218,33 @@
                             </div>
                             <div class="carousel-item">
                                 <img src="img/home/crane.jpg" class="d-block w-100" alt="...">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <!--  <h5>Second slide label</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+                                <div class="carousel-caption d-none d-md-block"></div>
+                            </div>
+                                <div class="carousel-item">
+                                    <img src="img/home/fototgbg.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
                                 </div>
                             </div>
-                            <div class="carousel-item">
-                                <img src="img/home/fototgbg.jpg" class="d-block w-100" alt="...">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <!-- <h5>Third slide label</h5>
-              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p> -->
-                                </div>
-                            </div>
-                            <!-- <div class="carousel-item">
-            <video playsinline="playsinline" autoplay="autoplay" muted="unmuted" loop="loop" class="d-block w-100">
-              <source src="/home/assets/img/video 2.mp4" type="video/mp4">
-            </video>
-            <div class="carousel-caption d-none d-md-block">
-             <!-<h5>Third slide label</h5>
-              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-            </div>
-          </div> -->
                             <div class="carousel-item">
                                 <img src="img/home/pasir.jpg" class="d-block w-100" alt="...">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <!-- <h5>Third slide label</h5>
-              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p> -->
-                                </div>
+                                <div class="carousel-caption d-none d-md-block"></div>
                             </div>
                             <div class="carousel-item">
                                 <img src="img/home/tiangpancang.jpg" class="d-block w-100" alt="...">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <!--  <h5>Third slide label</h5>
-              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p> -->
-                                </div>
+                                <div class="carousel-caption d-none d-md-block"></div>
                             </div>
-                            <!--  <div class="carousel-item">
-            <video playsinline="playsinline" autoplay="autoplay" muted="unmuted" loop="loop" class="d-block w-100">
-              <source src="/home/assets/img/video 3.mp4" type="video/mp4">
-            </video>
-            <div class="carousel-caption d-none d-md-block">
-             <! <h5>Third slide label</h5>
-              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-            </div>
-          </div> -->
                             <div class="carousel-item">
                                 <img src="img/home/angkattugboat.jpeg" class="d-block w-100" alt="...">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <!--  <h5>Third slide label</h5>
-              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p> -->
-                                </div>
+                                <div class="carousel-caption d-none d-md-block"></div>
                             </div>
                             <div class="carousel-item">
                                 <img src="img/home/lct.jpeg" class="d-block w-100" alt="...">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <!--  <h5>Third slide label</h5>
-              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p> -->
-                                </div>
+                                <div class="carousel-caption d-none d-md-block"></div>
                             </div>
                             <div class="carousel-item">
                                 <img src="img/home/project.jpeg" class="d-block w-100" alt="...">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <!--  <h5>Third slide label</h5>
-              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p> -->
-                                </div>
+                                <div class="carousel-caption d-none d-md-block"></div>
                             </div>
-                            <!-- <div class="carousel-item">
-            <video playsinline="playsinline" autoplay="autoplay" muted="unmuted" loop="loop" class="d-block w-100">
-              <source src="/home/assets/img/video.mp4" type="video/mp4">
-            </video>
-            <div class="carousel-caption d-none d-md-block">
-             <!-<h5>Third slide label</h5>
-              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-            </div>
-          </div> -->
                         </div>
                         <div class="carousel-control-prev " href="#carouselExampleCaptions" role="button"
                             data-slide="prev">
@@ -357,10 +277,8 @@
                             <div class="col-lg-6
         md-4 sm-12 mb-3 pr-1 pb-2">
                                 <div class="card" style="width:550px">
-                                    <!-- <img class="card-img-top" src="img_avatar1.png" alt="Card image" style="width:100%"> -->
                                     <div class="card-body">
                                         <h4 class="card-title styleheadingarticle2">Cara Menyewa Tongkang</h4>
-                                        <!-- <p class="card-text pt-2 pb-4">1. Butuh tongkang yang berapa feet? <br>2. Butuh tongkang berapa set, atau tongkangnya aja berapa unit? <br>3. Tongkang tahun berapa? <br>4. Yang biasa atau yang pakai ramdoor dan sideboard?<br> 5. Untuk angkut apa dan total muatan berapa? <br> 6. Sistem sewa TC (Time Charter) per ... <br> 7. <br>8.<br>9.<br>10. </p> -->
                                         <a class="btn btn-read" href="#" role="button">Read More &raquo;</a>
                                     </div>
                                 </div>
@@ -368,7 +286,6 @@
                             <div class="col-lg-6
         md-4 sm-12 mb-3">
                                 <div class="card" style="width:550px">
-                                    <!--  <img class="card-img-top imgArt" src="/home/assets/img/fototgbg.jpg" alt="Card image"> -->
                                     <div class="card-body">
                                         <h4 class="card-title styleheadingarticle2">Detail Tug Boat, Tongkang dan LCT
                                         </h4>
