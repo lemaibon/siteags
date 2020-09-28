@@ -45,7 +45,8 @@ return [
     |
     */
 
-    'logo' => '<b>ArthaGraha</b>Samudera',
+    'logo' => '<b>Artha Graha</b> Samudera',
+    'logo_sidebar' => '<b>AG</b>S',
     'logo_img' => 'img/admin/logo-ags.png',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,

@@ -76,7 +76,7 @@ body {
 }
 
 .carousel {
-    max-height: 552px;
+    max-height: 550px;
     overflow: hidden;
 }
 
@@ -99,50 +99,43 @@ body {
 .carousel:hover .carousel-control-next,
 .carousel:hover .carousel-indicators {
     visibility: visible;
-    z-index: 15;
+}
+
+.carousel:hover::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0.6;
 }
 
 .carousel:after {
-    content: '\A';
-    position: absolute;
-    width: 100%;
+    opacity: 0;
+}
+
+
+html,
+body,
+.carousel,
+.carousel-inner,
+.carousel-inner .item {
     height: 100%;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.6);
-    opacity: 0;
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s;
 }
 
-.carousel:hover:after {
-    opacity: 1;
+.item:nth-child(1) {
+    background: #74C390;
 }
 
-.carousel-fade .carousel-item {
-    opacity: 0;
-    transition-duration: .6s;
-    transition-property: opacity;
+.item:nth-child(2) {
+    background: #51BCE8;
 }
 
-.carousel-fade .carousel-item.active,
-.carousel-fade .carousel-item-next.carousel-item-left,
-.carousel-fade .carousel-item-prev.carousel-item-right {
-    opacity: 1;
-}
-
-.carousel-fade .active.carousel-item-left,
-.carousel-fade .active.carousel-item-right {
-    opacity: 0;
-}
-
-.carousel-fade .carousel-item-next,
-.carousel-fade .carousel-item-prev,
-.carousel-fade .carousel-item.active,
-.carousel-fade .active.carousel-item-left,
-.carousel-fade .active.carousel-item-prev {
-    transform: translateX(0);
-    transform: translate3d(0, 0, 0);
+.item:nth-child(3) {
+    background: #E46653;
 }
 
 div.aboutDesc {
